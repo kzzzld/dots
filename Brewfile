@@ -1,3 +1,4 @@
+tap "bjarneo/cliamp"
 tap "cloudflare/cloudflare", trusted: true
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
@@ -5,6 +6,8 @@ brew "bottom"
 brew "cloudflared"
 # Modern, maintained replacement for ls
 brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
@@ -45,12 +48,16 @@ brew "zellij"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# A retro terminal music player inspired by Winamp 2.x
+brew "bjarneo/cliamp/cliamp", trusted: true
 # Display management tool
 cask "betterdisplay"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Command-line tool to set the desktop picture
 cask "desktoppr"
+# Matrix collaboration client
+cask "element"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # IRC client
