@@ -59,8 +59,6 @@ if [ "$ANIMATIONS" == "true" ]; then
   defaults write com.apple.dock autohide-delay -float 0.0
   defaults write com.apple.dock autohide-time-modifier -float 0.4
   defaults delete com.apple.dock expose-animation-duration || true
-  defaults delete com.apple.Mail DisableReplyAnimations || true
-  defaults delete com.apple.Mail DisableSendAnimations || true
 else
   defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
   defaults write -g NSBrowserColumnAnimationSpeedMultiplier -float 0
@@ -73,8 +71,6 @@ else
   defaults write com.apple.dock autohide-delay -float 0
   defaults write com.apple.dock autohide-time-modifier -float 0
   defaults write com.apple.dock expose-animation-duration -float 0.1
-  defaults write com.apple.Mail DisableReplyAnimations -bool true
-  defaults write com.apple.Mail DisableSendAnimations -bool true
 fi
 
 desktoppr "$HOME/Wallpapers/${WALLPAPER}"
