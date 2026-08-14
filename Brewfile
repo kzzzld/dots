@@ -58,9 +58,14 @@ cask "brave-browser"
 cask "desktoppr"
 # Matrix collaboration client
 cask "element"
+cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # IRC client
 cask "halloy"
 # Menu bar manager
 cask "jordanbaird-ice"
+# Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
+cask "mac-mouse-fix"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
