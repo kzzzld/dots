@@ -86,6 +86,7 @@ defaults write com.apple.WindowManager StandardHideWidgets -int 1
 
 # Dock
 defaults write com.apple.dock autohide -bool ${DOCK_AUTOHIDE}
+defaults write com.apple.dock show-recents -bool ${DOCK_SHOW_RECENTS}
 
 # Restart affected apps
 killall Finder Dock WindowManager 2>/dev/null || true
