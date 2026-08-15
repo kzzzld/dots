@@ -6,7 +6,7 @@ CONFIGS="Wallpapers shell nvim ghostty halloy gpg zellij"
 THEME="Dark"
 ANIMATIONS=false
 SIDEBAR_FLOATING=true
-ROUNDED_CORNERS=10
+ROUNDED_CORNERS=20
 
 HIDDEN_FILES=false
 
