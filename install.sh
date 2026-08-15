@@ -24,7 +24,7 @@ eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
 # --- Clone Dotfiles ---
 if [ ! -d "${DOTDIR}" ]; then
-  git clone git@github.com:UmutKzl/macdots.git "${DOTDIR}"
+  git clone git@codeberg.org:kzzzl/macdots.git "${DOTDIR}"
 fi
 
 # --- Config file ---
