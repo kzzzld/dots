@@ -1,5 +1,7 @@
-tap "bjarneo/cliamp"
+tap "bjarneo/cliamp", trusted: true
 tap "cloudflare/cloudflare", trusted: true
+tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
+tap "nikitabobko/tap", trusted: true
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
@@ -50,6 +52,12 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # A retro terminal music player inspired by Winamp 2.x
 brew "bjarneo/cliamp/cliamp", trusted: true
+# A window border system for macOS
+brew "felixkratz/formulae/borders", trusted: true
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace", trusted: true
+# Menu bar tool to limit maximum charging percentage
+cask "aldente"
 # Display management tool
 cask "betterdisplay"
 # Web browser focusing on privacy
@@ -71,3 +79,5 @@ cask "mac-mouse-fix"
 cask "nextcloud"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Run commands and display their output on the desktop
+cask "ubersicht"
