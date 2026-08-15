@@ -67,5 +67,7 @@ cask "halloy"
 cask "jordanbaird-ice"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix"
+# Desktop sync client for Nextcloud software products
+cask "nextcloud"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
