@@ -91,8 +91,23 @@ defaults write com.apple.dock show-recents -bool ${DOCK_SHOW_RECENTS}
 # Menu bar
 defaults -currentHost write com.apple.controlcenter.plist BatteryShowPercentage -bool ${MENUBAR_SHOW_BATTERY}
 
+# Brave
+sudo mkdir -p /Library/Managed\ Preferences
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveWalletDisabled -bool true
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveAIChatEnabled -bool false
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveNewsDisabled -bool true
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveTalkDisabled -bool true
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveSpeedreaderEnabled -bool false
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveP3AEnabled -bool false
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveStatsPingEnabled -bool false
+sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveWebDiscoveryEnabled -bool false
+
+# Ubersicht
+[ ! -d "$HOME/Library/Application\ Support/Übersicht/widgets/simple-bar" ] && git clone --depth 1 https://github.com/Jean-Tinland/simple-bar $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
+
 # Restart affected apps
 killall Finder Dock WindowManager 2>/dev/null || true
+sudo killall cfprefsd 2>/dev/null || true
 
 # Last info
 echo "Hello dear user, I hope this script doesn't have any bugs. If it has, please report it using my GitHub repo's issues tab. Good luck!"

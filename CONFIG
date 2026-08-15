@@ -1,5 +1,5 @@
 # Configs to stow
-CONFIGS="Wallpapers shell nvim ghostty halloy gpg zellij"
+CONFIGS="Wallpapers shell nvim ghostty halloy gpg zellij aerospace simplebar"
 
 ### System Settings ###
 
