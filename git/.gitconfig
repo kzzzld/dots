@@ -1,0 +1,6 @@
+[user]
+	name = kzzzld
+	email = kzzzl@proton.me
+	signingkey = BA7E9FDD9D6EFDD4AE8E88F8107AE94881F99C52
+[commit]
+	gpgsign = true
