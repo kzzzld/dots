@@ -33,8 +33,8 @@ outer.left =       10
 outer.bottom =     10
 outer.top = [
   { monitor."built-in" = 10 },
-  { monitor."main" = 43 },
-  43
+  { monitor."main" = 47 },
+  47
 ]
 outer.right =      10
 
