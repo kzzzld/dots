@@ -6,6 +6,9 @@ eval "$(starship init zsh)"
 [ -f "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# path
+export PATH="$PATH:$HOME/.local/bin"
+
 # aliases
 alias ls="eza --icons=always --color=always"
 alias ll="eza -l --icons=always --color=always"
@@ -27,3 +30,6 @@ export ANTHROPIC_DEFAULT_OPUS_MODEL=$CLAUDE_MODEL
 export ANTHROPIC_DEFAULT_SONNET_MODEL=$CLAUDE_MODEL
 export ANTHROPIC_DEFAULT_HAIKU_MODEL=$CLAUDE_MODEL
 export CLAUDE_CODE_SUBAGENT_MODEL=$CLAUDE_MODEL
+
+# startup message
+fortune | cowsay
