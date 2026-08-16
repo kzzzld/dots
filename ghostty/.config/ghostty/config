@@ -1,7 +1,7 @@
 theme = Catppuccin Mocha
 background-opacity = 0.9
-#macos-titlebar-style = tabs
-macos-titlebar-style = hidden
+macos-titlebar-style = tabs
+#macos-titlebar-style = hidden
 window-padding-x = 12
 window-padding-y = 12
 #custom-shader = shaders/cursor_warp.glsl
