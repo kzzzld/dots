@@ -4,7 +4,7 @@ CONFIGS="Wallpapers shell nvim ghostty halloy gpg zellij aerospace simplebar"
 ### System Settings ###
 
 THEME="Dark"
-ANIMATIONS=false
+ANIMATIONS=true
 SIDEBAR_FLOATING=true
 ROUNDED_CORNERS=20
 
