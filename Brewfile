@@ -38,6 +38,10 @@ brew "pinentry"
 brew "gnupg"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Lynx-like WWW browser that supports tables, menus, etc.
+brew "links"
+# Text-based web browser
+brew "lynx"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Whole World In Your Console
@@ -111,3 +115,12 @@ cask "obsidian"
 cask "thunderbird"
 # Run commands and display their output on the desktop
 cask "ubersicht"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
+vscode "catppuccin.catppuccin-vsc"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-python-envs"
+vscode "redhat.vscode-yaml"
+vscode "usernamehw.errorlens"
+vscode "vscodevim.vim"
