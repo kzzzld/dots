@@ -2,20 +2,34 @@ tap "bjarneo/cliamp", trusted: true
 tap "cloudflare/cloudflare", trusted: true
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
 tap "nikitabobko/tap", trusted: true
+# GNU compiler collection
+brew "gcc"
+# AI pair programming in your terminal
+brew "aider"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# Console Bonsai is a bonsai tree generator, written in C using ncurses
+brew "cbonsai"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima", restart_service: :changed
+# Apjanke's fork of the classic cowsay project
+brew "cowsay"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU compiler collection
-brew "gcc"
 # Blazing fast terminal-ui for git written in rust
 brew "gitui"
 # Passphrase entry dialog utilizing the Assuan protocol
@@ -24,16 +38,26 @@ brew "pinentry"
 brew "gnupg"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Whole World In Your Console
+brew "mapscii"
+# Media player based on MPlayer and mplayer2
+brew "mpv"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# AI coding agent, built for the terminal
+brew "opencode"
 # SSL/TLS VPN implementing OSI layer 2 or 3 secure network extension
 brew "openvpn"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
+# Animated pipes terminal screensaver
+brew "pipes-sh"
+# Prints a steam locomotive if you type sl instead of ls
+brew "sl"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -58,10 +82,14 @@ brew "felixkratz/formulae/borders", trusted: true
 cask "nikitabobko/tap/aerospace", trusted: true
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
 # Display management tool
 cask "betterdisplay"
 # Web browser focusing on privacy
 cask "brave-browser"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Command-line tool to set the desktop picture
 cask "desktoppr"
 # Matrix collaboration client
@@ -79,5 +107,7 @@ cask "mac-mouse-fix"
 cask "nextcloud"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Customizable email client
+cask "thunderbird"
 # Run commands and display their output on the desktop
 cask "ubersicht"
