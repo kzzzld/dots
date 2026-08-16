@@ -1,5 +1,5 @@
 # Configs to stow
-CONFIGS="Wallpapers shell nvim ghostty halloy gpg zellij aerospace simplebar"
+CONFIGS="Wallpapers shell nvim vscodium ghostty halloy gpg zellij aerospace simplebar"
 
 ### System Settings ###
 
@@ -16,6 +16,13 @@ TRACKPAD_PRESSURE=0
 
 DOCK_AUTOHIDE=true
 DOCK_SHOW_RECENTS=false
+
+VSCODIUM_EXTENSION_LIST=(
+    vscodevim.vim
+    usernamehw.errorlens
+    ms-python.python
+    Catppuccin.catppuccin-vsc
+)
 
 # Put your wallpaper to ~/Wallpapers and write it's filename
 WALLPAPER="clouds-5.jpg"
