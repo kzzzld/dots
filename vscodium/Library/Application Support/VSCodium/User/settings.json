@@ -18,5 +18,7 @@
     "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
     "errorLens.fontFamily": "JetBrainsMono Nerd Font",
     "markdown.preview.fontFamily": "JetBrainsMono Nerd Font, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
-    "terminal.integrated.fontLigatures.enabled": true
+    "terminal.integrated.fontLigatures.enabled": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false
 }

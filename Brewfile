@@ -10,6 +10,8 @@ brew "aider"
 brew "aria2"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Console Bonsai is a bonsai tree generator, written in C using ncurses
 brew "cbonsai"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
@@ -36,6 +38,8 @@ brew "gitui"
 brew "pinentry"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
+# Handy way to save and run project-specific commands
+brew "just"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Lynx-like WWW browser that supports tables, menus, etc.
@@ -86,14 +90,10 @@ brew "felixkratz/formulae/borders", trusted: true
 cask "nikitabobko/tap/aerospace", trusted: true
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
-# Terminal interface for Antigravity agents
-cask "antigravity-cli"
 # Display management tool
 cask "betterdisplay"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Terminal-based AI coding assistant
-cask "claude-code"
 # Command-line tool to set the desktop picture
 cask "desktoppr"
 # Matrix collaboration client
@@ -103,8 +103,6 @@ cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 # IRC client
 cask "halloy"
-# Menu bar manager
-cask "jordanbaird-ice"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix"
 # Desktop sync client for Nextcloud software products
@@ -118,6 +116,8 @@ cask "ubersicht"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 vscode "catppuccin.catppuccin-vsc"
+vscode "ebextensions.active-clang-format"
+vscode "llvm-vs-code-extensions.vscode-clangd"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-python-envs"
