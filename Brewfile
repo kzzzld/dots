@@ -38,6 +38,8 @@ brew "gitui"
 brew "pinentry"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
+# CLI wrapper for basic network utilities on macOS - ip command
+brew "iproute2mac"
 # Handy way to save and run project-specific commands
 brew "just"
 # Simple terminal UI for git commands
@@ -74,6 +76,8 @@ brew "stow"
 brew "tldr"
 # Parser generator tool
 brew "tree-sitter-cli"
+# Vim-like text editor
+brew "vis"
 # Internet file retriever
 brew "wget"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -109,6 +113,8 @@ cask "mac-mouse-fix"
 cask "nextcloud"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Video game digital distribution service
+cask "steam"
 # Customizable email client
 cask "thunderbird"
 # Run commands and display their output on the desktop
