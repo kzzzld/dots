@@ -1,3 +1,4 @@
+tap "barutsrb/tap", "https://github.com/BarutSRB/homebrew-tap", trusted: { casks: ["omniwm"] }
 tap "bjarneo/cliamp", trusted: true
 tap "cloudflare/cloudflare", trusted: true
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
@@ -107,6 +108,8 @@ cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 # IRC client
 cask "halloy"
+# Desktop automation application
+cask "hammerspoon"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix"
 # Desktop sync client for Nextcloud software products
@@ -121,6 +124,8 @@ cask "thunderbird"
 cask "ubersicht"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm@nightly"
 vscode "catppuccin.catppuccin-vsc"
 vscode "ebextensions.active-clang-format"
 vscode "llvm-vs-code-extensions.vscode-clangd"
