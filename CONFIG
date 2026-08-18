@@ -1,5 +1,5 @@
 # Configs to stow
-CONFIGS="Wallpapers shell nvim vscodium ghostty halloy gpg zellij aerospace simplebar"
+CONFIGS="Wallpapers shell nvim vscodium ghostty halloy gpg zellij aerospace simplebar wezterm git"
 
 ### System Settings ###
 
