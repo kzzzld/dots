@@ -22,6 +22,7 @@ VSCODIUM_EXTENSION_LIST=(
     usernamehw.errorlens
     ms-python.python
     Catppuccin.catppuccin-vsc
+    esbenp.prettier-vscode
 )
 
 # Put your wallpaper to ~/Wallpapers and write it's filename
