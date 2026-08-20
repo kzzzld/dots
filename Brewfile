@@ -9,6 +9,10 @@ brew "gcc"
 brew "aider"
 # Download with resuming and segmented downloading
 brew "aria2"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Secure and free password manager for all of your devices
+brew "bitwarden-cli"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -49,8 +53,6 @@ brew "lazygit"
 brew "links"
 # Text-based web browser
 brew "lynx"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
 # Whole World In Your Console
 brew "mapscii"
 # Media player based on MPlayer and mplayer2
