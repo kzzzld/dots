@@ -102,12 +102,6 @@ sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveP3AEnab
 sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveStatsPingEnabled -bool false
 sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveWebDiscoveryEnabled -bool false
 
-# VSCodium
-defaults write com.vscodium ApplePressAndHoldEnabled -bool false
-for i in ${VSCODIUM_EXTENSION_LIST[@]}; do
-  codium --install-extension $i
-done
-
 # Ubersicht
 [ ! -d "$HOME/Library/Application Support/Übersicht/widgets/simple-bar" ] && git clone --depth 1 https://github.com/Jean-Tinland/simple-bar $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
 
