@@ -125,6 +125,8 @@ cask "steam"
 cask "thunderbird"
 # Run commands and display their output on the desktop
 cask "ubersicht"
+# Virtual machines UI using QEMU
+cask "utm"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
