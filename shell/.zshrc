@@ -18,3 +18,6 @@ alias tree="eza --tree --icons=always --color=always"
 
 # startup message
 fortune | cowsay
+
+# secrets
+[ -f ~/.secrets ] && source ~/.secrets
