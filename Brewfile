@@ -27,6 +27,8 @@ brew "colima", restart_service: :changed
 brew "cowsay"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# GNU Emacs text editor
+brew "emacs"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
@@ -77,6 +79,8 @@ brew "starship"
 brew "stow"
 # Simplified and community-driven man pages
 brew "tldr"
+# Instant terminal sharing
+brew "tmate"
 # Parser generator tool
 brew "tree-sitter-cli"
 # Vim-like text editor
@@ -119,6 +123,8 @@ cask "mac-mouse-fix"
 cask "nextcloud"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# VPN client focusing on security
+cask "protonvpn"
 # Video game digital distribution service
 cask "steam"
 # Customizable email client
@@ -127,6 +133,8 @@ cask "thunderbird"
 cask "ubersicht"
 # Virtual machines UI using QEMU
 cask "utm"
+# Application launcher and command palette
+cask "vicinae"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
