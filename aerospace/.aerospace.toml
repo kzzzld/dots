@@ -50,18 +50,18 @@ outer.right =      10
 9 = 'secondary'
 
 [mode.main.binding]
-    cmd-enter = 'exec-and-forget open -na /Applications/Ghostty.app'
+    cmd-enter = 'exec-and-forget /Applications/WezTerm.app/Contents/MacOS/wezterm start --always-new-process'
 
     # i3 wraps focus by default
-    cmd-h =         'focus --boundaries-action wrap-around-the-workspace left'
-    cmd-j =         'focus --boundaries-action wrap-around-the-workspace down'
-    cmd-k =         'focus --boundaries-action wrap-around-the-workspace up'
-    cmd-l = 'focus --boundaries-action wrap-around-the-workspace right'
+    cmd-left  =         'focus --boundaries-action wrap-around-the-workspace left'
+    cmd-down  =         'focus --boundaries-action wrap-around-the-workspace down'
+    cmd-up    =         'focus --boundaries-action wrap-around-the-workspace up'
+    cmd-right = 'focus --boundaries-action wrap-around-the-workspace right'
 
-    cmd-shift-h = 'move left'
-    cmd-shift-j = 'move down'
-    cmd-shift-k = 'move up'
-    cmd-shift-l = 'move right'
+    cmd-shift-left  = 'move left'
+    cmd-shift-down  = 'move down'
+    cmd-shift-up    = 'move up'
+    cmd-shift-right = 'move right'
 
     cmd-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 
