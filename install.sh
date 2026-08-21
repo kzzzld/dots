@@ -105,6 +105,12 @@ sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveWebDisc
 # Ubersicht
 [ ! -d "$HOME/Library/Application Support/Übersicht/widgets/simple-bar" ] && git clone --depth 1 https://github.com/Jean-Tinland/simple-bar $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
 
+# Doom Emacs
+if [ ! -d "$HOME/.config/emacs" ]; then
+  git clone --depth 1 https://github.com/doomemacs/core ~/.config/emacs
+  ~/.config/emacs/bin/doom install
+fi
+
 # Restart affected apps
 killall Finder Dock WindowManager 2>/dev/null || true
 sudo killall cfprefsd 2>/dev/null || true
