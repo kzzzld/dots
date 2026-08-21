@@ -1,13 +1,15 @@
 theme = "catppuccin-mocha"
 
 [servers.Libera]
-nickname = "kzzzl"
-nick_password_command = "source ~/.secrets && /opt/homebrew/bin/bw get password libera"
 server = "irc.libera.chat"
+nickname = "kzzzl"
 channels = ["#libera", "#macdev"]
+[servers.Libera.sasl.plain]
+username = "kzzzl"
+password_command = "source ~/.secrets && /opt/homebrew/bin/bw get password libera"
 
 [servers.OFTC]
 server = "irc.oftc.net"
-nick_password_command = "source ~/.secrets && /opt/homebrew/bin/bw get password oftc"
 nickname = "kzzzl"
+nick_password_command = "source ~/.secrets && /opt/homebrew/bin/bw get password oftc"
 channels = ["#asahi", "#asahi-alt", "#asahi-re"]
