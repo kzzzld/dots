@@ -73,3 +73,23 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+
+;;; Gnus E-Mail Settings
+
+(setq message-send-mail-function 'smtpmail-send-it
+      smtpmail-smtp-server "kzzzl.xyz"
+      smtpmail-smtp-service 587
+      smtpmail-stream-type 'starttls
+      smtpmail-auth-credentials
+      '(("kzzzl.xyz" 587 "kzzzl@kzzzl.xyz" nil)))
+
+(setq gnus-select-method
+      '(nnimap "yunohost"
+               (nnimap-address "kzzzl.xyz")
+               (nnimap-server-port 993)
+               (nnimap-stream ssl)
+               (nnimap-user "kzzzl@kzzzl.xyz")))
+
+(setq user-full-name "kzzzl"
+      user-mail-address "kzzzl@kzzzl.xyz")
