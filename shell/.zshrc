@@ -5,6 +5,7 @@ eval "$(starship init zsh)"
 # install them via homebrew and source here
 [ -f "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+set -o vi
 
 # path
 export PATH="$PATH:$HOME/.local/bin"
