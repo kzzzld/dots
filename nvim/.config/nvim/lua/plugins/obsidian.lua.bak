@@ -1,0 +1,31 @@
+return {
+  "obsidian-nvim/obsidian.nvim",
+  version = "*",
+  lazy = false,
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  opts = function()
+    return {
+      note_id_func = require("obsidian.builtin").title_id,
+      legacy_commands = false,
+      picker = {
+        name = "snacks.picker",
+      },
+      workspaces = {
+        -- {
+        --   name = "notes",
+        --   path = "~/Library/CloudStorage/Nextcloud-nextcloud.kzzzl.xyz-kzzzl/Notes",
+        -- },
+        {
+          name = "notes",
+          path = "~/Notes",
+        },
+      },
+    }
+  end,
+  keys = {
+    { "<leader>ol", "<cmd>Obsidian follow_link<cr>", desc = "Follow Obsidian Link" },
+    { "<leader>of", "<cmd>Obsidian quick_switch<cr>", desc = "Quick Switch Obsidian Notes" },
+  },
+}
