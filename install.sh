@@ -111,6 +111,9 @@ if [ ! -d "$HOME/.config/emacs" ]; then
   ~/.config/emacs/bin/doom install
 fi
 
+# GPG
+git config --global gpg.program $GPG_LOCATION
+
 # Restart affected apps
 killall Finder Dock WindowManager 2>/dev/null || true
 sudo killall cfprefsd 2>/dev/null || true

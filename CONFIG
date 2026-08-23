@@ -17,5 +17,7 @@ TRACKPAD_PRESSURE=0
 DOCK_AUTOHIDE=true
 DOCK_SHOW_RECENTS=false
 
+GPG_LOCATION="/opt/homebrew/bin/gpg"
+
 # Put your wallpaper to ~/Wallpapers and write it's filename
 WALLPAPER="clouds-5.jpg"
