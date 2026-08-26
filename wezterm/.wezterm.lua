@@ -6,6 +6,7 @@ local config = wezterm.config_builder()
 
 -- Appearance
 config.color_scheme = "Catppuccin Mocha"
+config.window_background_opacity = 0.9
 config.colors = {
 	tab_bar = {
 		active_tab = {
@@ -24,7 +25,7 @@ config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 
 -- Window
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE|RESIZE|MACOS_USE_BACKGROUND_COLOR_AS_TITLEBAR_COLOR"
 config.window_padding = {
 	left = 25,
 	right = 25,
