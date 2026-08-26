@@ -1,0 +1,6 @@
+(when (eq system-type 'darwin)
+  (setq ns-use-proxy-icon nil)
+  (add-to-list 'default-frame-alist '(ns-appearance . dark))
+  (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+  (set-frame-parameter nil 'ns-appearance 'dark)
+  (set-frame-parameter nil 'ns-transparent-titlebar t))
