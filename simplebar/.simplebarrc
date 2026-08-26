@@ -3,26 +3,26 @@
   "global": {
     "theme": "auto",
     "compactMode": false,
-    "floatingBar": true,
-    "noBarBg": true,
+    "floatingBar": false,
+    "noBarBg": false,
     "noColorInData": false,
     "bottomBar": false,
     "sideDecoration": false,
-    "inlineSpacesOptions": true,
-    "disableAnimations": true,
-    "spacesBackgroundColorAsForeground": false,
-    "widgetsBackgroundColorAsForeground": false,
+    "inlineSpacesOptions": false,
+    "disableAnimations": false,
+    "spacesBackgroundColorAsForeground": true,
+    "widgetsBackgroundColorAsForeground": true,
     "widgetMaxWidth": "120px",
     "slidingAnimationPace": 0,
-    "font": "JetBrainsMono Nerd Font, Monaco, Menlo, monospace",
+    "font": "JetBrainsMono Nerd Font, Menlo, Menlo, monospace",
     "fontSize": "12px",
     "yabaiPath": "/opt/homebrew/bin/yabai",
     "aerospacePath": "/opt/homebrew/bin/aerospace",
     "windowManager": "aerospace",
     "shell": "bash",
     "terminal": "Terminal",
-    "disableNotifications": false,
-    "enableMissives": false,
+    "disableNotifications": true,
+    "enableMissives": true,
     "enableServer": false,
     "serverSocketPort": 7777,
     "yabaiServerRefresh": false,
@@ -76,7 +76,7 @@
     "customAeroSpaceDisplayIndexes": {}
   },
   "widgets": {
-    "processWidget": true,
+    "processWidget": false,
     "githubWidget": false,
     "weatherWidget": false,
     "netstatsWidget": false,
@@ -154,7 +154,7 @@
     "showIcon": true,
     "toggleCaffeinateOnClick": true,
     "disableCaffeinateInvertedBackground": false,
-    "caffeinateOption": ""
+    "caffeinateOption": "-disu"
   },
   "networkWidgetOptions": {
     "refreshFrequency": 20000,
@@ -284,6 +284,6 @@
     "userWidgetsList": {}
   },
   "customStyles": {
-    "styles": "/* your custom css styles here */"
+    "styles": ":root {\n  --bar-height: 40px;\n}\n\n.simple-bar--spaces .space.space--focused span,\n.simple-bar--spaces .space.space--focused {\n  font-weight: 700 !important;\n  -webkit-font-smoothing: antialiased;\n}"
   }
 }
