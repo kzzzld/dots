@@ -105,11 +105,8 @@ sudo defaults write /Library/Managed\ Preferences/com.brave.Browser BraveWebDisc
 # Ubersicht
 [ ! -d "$HOME/Library/Application Support/Übersicht/widgets/simple-bar" ] && git clone --depth 1 https://github.com/Jean-Tinland/simple-bar $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
 
-# Doom Emacs
-if [ ! -d "$HOME/.config/emacs" ]; then
-  git clone --depth 1 https://github.com/doomemacs/core ~/.config/emacs
-  ~/.config/emacs/bin/doom install
-fi
+# Emacs
+defaults write org.gnu.Emacs TransparentTitleBar DARK
 
 # GPG
 git config --global gpg.program $GPG_LOCATION
