@@ -3,6 +3,7 @@ tap "bjarneo/cliamp", trusted: true
 tap "cloudflare/cloudflare", trusted: true
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
 tap "nikitabobko/tap", trusted: true
+tap "railwaycat/emacsmacport", trusted: true
 # GNU compiler collection
 brew "gcc"
 # AI pair programming in your terminal
@@ -21,14 +22,8 @@ brew "btop"
 brew "cbonsai"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
-# Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima", restart_service: :changed
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
-# GNU Emacs text editor
-brew "emacs"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
@@ -59,6 +54,8 @@ brew "lynx"
 brew "mapscii"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Search tool like grep and The Silver Searcher
@@ -71,6 +68,10 @@ brew "openvpn"
 brew "pinentry-mac"
 # Animated pipes terminal screensaver
 brew "pipes-sh"
+# Password generator
+brew "pwgen"
+# Python Language Server for the Language Server Protocol
+brew "python-lsp-server"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Cross-shell prompt for astronauts
@@ -81,6 +82,8 @@ brew "stow"
 brew "tldr"
 # Instant terminal sharing
 brew "tmate"
+# Terminal multiplexer
+brew "tmux"
 # Parser generator tool
 brew "tree-sitter-cli"
 # Vim-like text editor
@@ -101,14 +104,24 @@ brew "felixkratz/formulae/borders", trusted: true
 cask "nikitabobko/tap/aerospace", trusted: true
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Display management tool
 cask "betterdisplay"
 # Web browser focusing on privacy
 cask "brave-browser"
+# Server and cloud storage browser
+cask "cyberduck"
 # Command-line tool to set the desktop picture
 cask "desktoppr"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
 # Matrix collaboration client
 cask "element"
+# YAMAMOTO Mitsuharu's Mac port of GNU Emacs
+cask "railwaycat/emacsmacport/emacs-mac"
+# Web browser
+cask "firefox"
 cask "font-fira-mono-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
@@ -117,16 +130,24 @@ cask "ghostty"
 cask "halloy"
 # Desktop automation application
 cask "hammerspoon"
+# Web browser
+cask "librewolf"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Desktop virtualization software
+cask "parallels"
 # VPN client focusing on security
 cask "protonvpn"
+# Instant messaging application focusing on security
+cask "signal"
 # Video game digital distribution service
 cask "steam"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
 # Customizable email client
 cask "thunderbird"
 # Run commands and display their output on the desktop
