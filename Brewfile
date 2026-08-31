@@ -1,3 +1,4 @@
+tap "asmvik/formulae"
 tap "barutsrb/tap", "https://github.com/BarutSRB/homebrew-tap", trusted: { casks: ["omniwm"] }
 tap "bjarneo/cliamp", trusted: true
 tap "cloudflare/cloudflare", trusted: true
@@ -92,10 +93,16 @@ brew "vis"
 brew "wget"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
 brew "zellij"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Simple hotkey-daemon for macOS.
+brew "asmvik/formulae/skhd", trusted: true
+# A tiling window manager for macOS based on binary space partitioning.
+brew "asmvik/formulae/yabai", trusted: true
 # A retro terminal music player inspired by Winamp 2.x
 brew "bjarneo/cliamp/cliamp", trusted: true
 # A window border system for macOS
@@ -108,8 +115,6 @@ cask "aldente"
 cask "alt-tab"
 # Display management tool
 cask "betterdisplay"
-# Web browser focusing on privacy
-cask "brave-browser"
 # Server and cloud storage browser
 cask "cyberduck"
 # Command-line tool to set the desktop picture
@@ -130,8 +135,6 @@ cask "ghostty"
 cask "halloy"
 # Desktop automation application
 cask "hammerspoon"
-# Web browser
-cask "librewolf"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix"
 # Desktop sync client for Nextcloud software products
@@ -140,8 +143,6 @@ cask "nextcloud"
 cask "obsidian"
 # Desktop virtualization software
 cask "parallels"
-# VPN client focusing on security
-cask "protonvpn"
 # Instant messaging application focusing on security
 cask "signal"
 # Video game digital distribution service
@@ -156,17 +157,6 @@ cask "ubersicht"
 cask "utm"
 # Application launcher and command palette
 cask "vicinae"
-# Binary releases of VS Code without MS branding/telemetry/licensing
-cask "vscodium"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm@nightly"
-vscode "catppuccin.catppuccin-vsc"
-vscode "ebextensions.active-clang-format"
-vscode "esbenp.prettier-vscode"
-vscode "llvm-vs-code-extensions.vscode-clangd"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-python-envs"
-vscode "redhat.vscode-yaml"
-vscode "usernamehw.errorlens"
-vscode "vscodevim.vim"
+npm "less"
