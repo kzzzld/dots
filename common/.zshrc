@@ -20,6 +20,9 @@ alias lla="eza -la --icons=always --color=always"
 alias tree="eza --tree --icons=always --color=always"
 alias cd=z
 
+# a fix for gpg
+export GPG_TTY=$(tty)
+
 # startup message
 # fortune | cowsay
 
