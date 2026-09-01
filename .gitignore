@@ -1,2 +1,3 @@
-gpg/.gnupg/*
-!gpg/.gnupg/gpg-agent.conf
+macos/.gnupg/*
+!macos/.gnupg/gpg-agent.conf
+.DS_Store
