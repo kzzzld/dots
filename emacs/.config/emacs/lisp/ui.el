@@ -7,4 +7,10 @@
                     :height 140
                     :weight 'normal)
 
+(defun my/use-terminal-background ()
+  (unless (display-graphic-p (selected-frame))
+    (set-face-background 'default "unspecified-bg" (selected-frame))))
+
+(add-hook 'window-setup-hook #'my/use-terminal-background)
+
 (provide 'ui)
