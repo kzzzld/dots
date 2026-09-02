@@ -3,6 +3,7 @@ cmake
 emacs
 hyprland
 lazygit
+libtool
 neovim
 noctalia
 stow
