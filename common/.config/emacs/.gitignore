@@ -2,3 +2,8 @@ elpa
 transient
 recentf
 .cache
+*.data
+*cache*
+auto-save-list
+snippets
+.*

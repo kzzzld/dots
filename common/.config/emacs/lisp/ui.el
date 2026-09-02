@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (when (eq system-type 'darwin)
   (add-to-list 'default-frame-alist '(ns-appearance . dark))
   (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t)))
@@ -12,5 +13,12 @@
     (set-face-background 'default "unspecified-bg" (selected-frame))))
 
 (add-hook 'window-setup-hook #'my/use-terminal-background)
+
+(add-to-list 'default-frame-alist '(undecorated . t))
+(setq frame-resize-pixelwise t)
+
+(set-face-attribute 'default nil
+                    :font "JetBrainsMono Nerd Font"
+                    :height 140)
 
 (provide 'ui)

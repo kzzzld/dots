@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (require 'package)
 (setq package-archives '(("melpa"  . "https://melpa.org/packages/")
                           ("gnu"    . "https://elpa.gnu.org/packages/")
@@ -54,22 +55,30 @@
   :commands lsp)
 
 (use-package lsp-ui :commands lsp-ui-mode)
-(use-package helm
-  :init
-  (helm-mode 1)
-  :bind
-  (("M-x" . helm-M-x)
-   ("C-x C-f" . helm-find-files)
-   ("C-x b" . helm-mini)
-   ("C-s" . helm-occur))
-  :config
-  (setq helm-split-window-in-side-p t
-        helm-move-to-line-cycle-in-source t
-        helm-ff-search-library-in-sexp t
-        helm-scroll-amount 8
-        helm-candidate-number-limit 50)
 
-  (helm-autoresize-mode 1))
+(use-package vertico
+  :init
+  (vertico-mode 1)
+  :custom
+  (vertico-cycle t))
+
+(use-package marginalia
+  :after vertico
+  :init
+  (marginalia-mode 1))
+
+(use-package orderless
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-defaults nil)
+  (completion-category-overrides '((file (styles partial-completion)))))
+
+(use-package consult
+  :bind (
+         ("C-s" . consult-line)          ;; Dosya içi arama (Helm-occur yerine)
+         ("C-x b" . consult-buffer)
+         :map evil-normal-state-map
+))
 
 (use-package helm-lsp :commands helm-lsp-workspace-symbol)
 (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
@@ -77,9 +86,11 @@
 (evil-set-leader 'normal (kbd "SPC"))
 
 (evil-define-key 'normal 'global
-  (kbd "<leader>ff") 'helm-find-files
-  (kbd "<leader>bb") 'helm-mini
-  (kbd "<leader>SPC") 'helm-M-x)
+  (kbd "<leader>ff") 'find-file
+  (kbd "<leader>fr") 'consult-recent-file
+  (kbd "<leader>bb") 'consult-buffer
+  (kbd "<leader>ps") 'consult-ripgrep
+  (kbd "<leader>SPC") 'execute-extended-command)
 
 (use-package which-key
     :config
@@ -105,7 +116,8 @@
 
 (use-package company
   :after lsp-mode
-  :hook (lsp-mode . company-mode)
+;  :hook (lsp-mode . company-mode)
+  :init (global-company-mode 1)
   :bind (:map company-active-map
          ("<tab>" . company-complete-selection))
         (:map lsp-mode-map
@@ -133,5 +145,7 @@
 
 (use-package yasnippet-snippets
   :after yasnippet)
+
+(use-package vterm)
 
 (provide 'packages)
