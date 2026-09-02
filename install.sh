@@ -2,6 +2,8 @@
 # vim: foldmethod=marker
 set -e
 
+source /etc/os-release
+
 # Set dotfile directory
 DOTDIR="${HOME}/Dotfiles"
 
@@ -30,6 +32,17 @@ if [[ $OSTYPE == "darwin"* ]]; then
     brew bundle
   )
 fi
+# }}}
+
+# (fedora) dnf {{{
+(
+  cd $DOTDIR
+  while IFS= read -r repo; do
+    [[ -z "$repo" || "$repo" =~ ^# ]] && continue
+    sudo dnf copr enable -y "$repo"
+  done <Coprfile
+  sudo dnf install -y $(cat Dnffile)
+)
 # }}}
 
 # (macOS) defaults {{{
@@ -101,7 +114,8 @@ fi
 # (all) stow {{{
 (
   cd $DOTDIR
-  stow common
+  stow common Wallpapers
   [[ "$OSTYPE" = "darwin"* ]] && stow macos
+  [[ "$ID_LIKE" = "fedora" ]] && stow linux
 )
 # }}}

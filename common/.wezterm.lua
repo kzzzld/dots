@@ -17,7 +17,7 @@ config.colors = {
 }
 
 -- Font
-config.font_size = 15
+config.font_size = 12
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 
 -- Tabbar

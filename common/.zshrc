@@ -3,8 +3,8 @@ eval "$(starship init zsh)"
 
 # plugins
 # install them via homebrew and source here
-[ -f "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-[ -f "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# [ -f "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# [ -f "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(zoxide init zsh)"
 set -o vi
 
@@ -24,7 +24,7 @@ alias cd=z
 export GPG_TTY=$(tty)
 
 # startup message
-# fortune | cowsay
+fastfetch -c neofetch
 
 # secrets
 [ -f ~/.secrets ] && source ~/.secrets
