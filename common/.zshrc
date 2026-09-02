@@ -23,6 +23,12 @@ alias cd=z
 # a fix for gpg
 export GPG_TTY=$(tty)
 
+# env
+export EDITOR="nvim"
+
+# path
+export PATH="$PATH:$HOME/.cargo/bin"
+
 # startup message
 fastfetch -c neofetch
 
