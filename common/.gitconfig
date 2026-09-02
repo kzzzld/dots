@@ -1,7 +1,7 @@
 [user]
 	name = kzzzld
-	email = kzzzl@proton.me
-	signingkey = BA7E9FDD9D6EFDD4AE8E88F8107AE94881F99C52
+	email = kzzzl@kzzzl.xyz
+	signingkey = FB8CEF6F1B8BB36AAAFBD19F03D93A23E84B5716
 [commit]
 	gpgsign = true
 [gpg]
