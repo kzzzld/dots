@@ -11,5 +11,6 @@ noctalia
 podman
 stow
 sudo
+tmux
 wezterm
 zsh
