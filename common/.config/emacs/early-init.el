@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (when (eq system-type 'darwin)
   (setq ns-use-proxy-icon nil)
   (add-to-list 'default-frame-alist '(ns-appearance . dark))
