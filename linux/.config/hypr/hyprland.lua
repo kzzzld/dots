@@ -38,6 +38,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd(
 		"systemd-inhibit --what=handle-power-key --who='Hyprland' --why='Ignored by user config' --mode=block sleep infinity"
 	)
+	hl.exec_cmd("hyprctl setcursor dmz-white 24")
 end)
 
 -------------------------------
@@ -247,15 +248,15 @@ hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(ipc .. "brightness-up"))
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(ipc .. "brightness-down"))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + a", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + d", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + w", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + s", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 
-hl.bind(mainMod .. " + SHIFT + a", hl.dsp.window.move({ direction = "left" }))
-hl.bind(mainMod .. " + SHIFT + d", hl.dsp.window.move({ direction = "right" }))
-hl.bind(mainMod .. " + SHIFT + w", hl.dsp.window.move({ direction = "up" }))
-hl.bind(mainMod .. " + SHIFT + s", hl.dsp.window.move({ direction = "down" }))
+hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
 
 hl.bind("XF86PowerOff", hl.dsp.exec_cmd(ipc .. "session lock"))
 
