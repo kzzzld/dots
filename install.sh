@@ -111,11 +111,25 @@ if [[ "$OSTYPE" = "darwin"* ]]; then
 fi
 # }}}
 
+# (linux) dmz-white cursor {{{
+(
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    if [ ! -d "$HOME/.icons/dmz-white" ]; then
+      cd /tmp
+      wget https://github.com/rhizoome/dmz-cursors/releases/download/v1.0/dmz-white.tar.xz
+      tar xvf dmz-white.tar.xz
+      mkdir -p ~/.icons
+      mv dmz-white ~/.icons
+    fi
+  fi
+)
+# }}}
+
 # (all) stow {{{
 (
   cd $DOTDIR
   stow common Wallpapers
   [[ "$OSTYPE" = "darwin"* ]] && stow macos
-  [[ "$ID_LIKE" = "fedora" ]] && stow linux
+  [[ "$OSTYPE" = "linux-gnu" ]] && stow linux
 )
 # }}}
