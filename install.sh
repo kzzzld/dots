@@ -35,14 +35,16 @@ fi
 # }}}
 
 # (fedora) dnf {{{
-(
-  cd $DOTDIR
-  while IFS= read -r repo; do
-    [[ -z "$repo" || "$repo" =~ ^# ]] && continue
-    sudo dnf copr enable -y "$repo"
-  done <Coprfile
-  sudo dnf install -y $(cat Dnffile)
-)
+if [[ "$ID_LIKE" == "fedora" ]]; then
+  (
+    cd $DOTDIR
+    while IFS= read -r repo; do
+      [[ -z "$repo" || "$repo" =~ ^# ]] && continue
+      sudo dnf copr enable -y "$repo"
+    done <Coprfile
+    sudo dnf install -y $(cat Dnffile)
+  )
+fi
 # }}}
 
 # (macOS) defaults {{{
@@ -123,6 +125,18 @@ fi
     fi
   fi
 )
+# }}}
+
+# (linux) cargo {{{
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  (
+    cd $DOTDIR
+    while IFS= read -r pkg; do
+      [[ -z "$pkg" || "$pkg" =~ ^# ]] && continue
+      cargo install "$pkg"
+    done <Cargofile
+  )
+fi
 # }}}
 
 # (all) stow {{{
