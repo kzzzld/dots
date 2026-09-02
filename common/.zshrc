@@ -27,7 +27,7 @@ export GPG_TTY=$(tty)
 export EDITOR="nvim"
 
 # path
-export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/Git/signal-cli/bin:$HOME/.cargo/bin"
 
 # startup message
 fastfetch -c neofetch
