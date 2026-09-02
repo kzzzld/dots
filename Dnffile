@@ -1,12 +1,14 @@
 adw-gtk3-theme
-cmake
-emacs
 aerc
+cmake
+distrobox
+emacs
 hyprland
 lazygit
 libtool
 neovim
 noctalia
+podman
 stow
 sudo
 wezterm
