@@ -2,6 +2,7 @@ tap "asmvik/formulae"
 tap "barutsrb/tap", "https://github.com/BarutSRB/homebrew-tap", trusted: { casks: ["omniwm"] }
 tap "bjarneo/cliamp", trusted: true
 tap "cloudflare/cloudflare", trusted: true
+tap "d12frosted/emacs-plus", trusted: true
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
 tap "nikitabobko/tap", trusted: true
 tap "railwaycat/emacsmacport", trusted: true
@@ -107,6 +108,8 @@ brew "asmvik/formulae/yabai", trusted: true
 brew "bjarneo/cliamp/cliamp", trusted: true
 # A window border system for macOS
 brew "felixkratz/formulae/borders", trusted: true
+# YAMAMOTO Mitsuharu's Mac port of GNU Emacs
+brew "railwaycat/emacsmacport/emacs-mac@29", args: ["with-emacs-big-sur-icon", "with-no-title-bars"], trusted: true
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace", trusted: true
 # Menu bar tool to limit maximum charging percentage
@@ -123,8 +126,6 @@ cask "desktoppr"
 cask "docker-desktop"
 # Matrix collaboration client
 cask "element"
-# YAMAMOTO Mitsuharu's Mac port of GNU Emacs
-cask "railwaycat/emacsmacport/emacs-mac"
 # Web browser
 cask "firefox"
 cask "font-fira-mono-nerd-font"
@@ -135,6 +136,8 @@ cask "ghostty"
 cask "halloy"
 # Desktop automation application
 cask "hammerspoon"
+# Keyboard shortcuts for every button on your screen
+cask "homerow"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix"
 # Desktop sync client for Nextcloud software products
