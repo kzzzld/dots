@@ -12,12 +12,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(helm-minibuffer-history-key "M-p")
-<<<<<<< HEAD
- '(package-selected-packages nil))
-=======
  '(mml-secure-openpgp-sign-with-sender t)
  '(package-selected-packages '(evil doom-themes batppuccin)))
->>>>>>> 45921ecd981a9193d3cf4a326ffcf72be85d6808
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
