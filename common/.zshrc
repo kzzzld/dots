@@ -25,12 +25,16 @@ export GPG_TTY=$(tty)
 
 # env
 export EDITOR="nvim"
+export TUT_CONF_DIR="$HOME/.config/tut"
 
 # path
 export PATH="$PATH:$HOME/Git/signal-cli/bin:$HOME/.cargo/bin"
+export XDG_CONFIG_HOME="$HOME/.config/"
 
 # startup message
 fastfetch -c neofetch
+echo
+tmux list-sessions
 
 # secrets
 [ -f ~/.secrets ] && source ~/.secrets
