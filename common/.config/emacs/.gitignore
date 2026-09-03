@@ -1,9 +1,4 @@
-elpa
-transient
-recentf
-.cache
-*.data
-*cache*
-auto-save-list
-snippets
-.*
+*
+!lisp
+!init.el
+!early-init.el
