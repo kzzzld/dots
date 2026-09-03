@@ -2,9 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/Jean-Tinland/simple-bar/refs/heads/master/lib/schemas/config.json",
   "global": {
     "theme": "auto",
-    "compactMode": false,
-    "floatingBar": false,
-    "noBarBg": false,
+    "compactMode": true,
+    "floatingBar": true,
+    "noBarBg": true,
     "noColorInData": true,
     "bottomBar": false,
     "sideDecoration": false,
