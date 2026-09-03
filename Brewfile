@@ -1,11 +1,18 @@
 tap "asmvik/formulae"
-tap "barutsrb/tap", "https://github.com/BarutSRB/homebrew-tap", trusted: { casks: ["omniwm"] }
-tap "bjarneo/cliamp", trusted: true
-tap "cloudflare/cloudflare", trusted: true
-tap "d12frosted/emacs-plus", trusted: true
+tap "barutsrb/tap", "https://github.com/BarutSRB/homebrew-tap"
+tap "bjarneo/cliamp"
+tap "cloudflare/cloudflare"
+tap "d12frosted/emacs-plus"
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
-tap "nikitabobko/tap", trusted: true
-tap "railwaycat/emacsmacport", trusted: true
+tap "johnsideserf/siggy"
+tap "nikitabobko/tap"
+tap "railwaycat/emacsmacport"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# Email client that runs in your terminal
+brew "aerc"
 # GNU compiler collection
 brew "gcc"
 # AI pair programming in your terminal
@@ -24,6 +31,8 @@ brew "btop"
 brew "cbonsai"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
+# Cross-platform make
+brew "cmake"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
 # Modern, maintained replacement for ls
@@ -38,16 +47,18 @@ brew "fortune"
 brew "fzf"
 # Blazing fast terminal-ui for git written in rust
 brew "gitui"
-# Passphrase entry dialog utilizing the Assuan protocol
-brew "pinentry"
-# GNU Privacy Guard (OpenPGP)
-brew "gnupg"
+# Matrix client for Vim addicts
+brew "iamb"
 # CLI wrapper for basic network utilities on macOS - ip command
 brew "iproute2mac"
 # Handy way to save and run project-specific commands
 brew "just"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Generic library support script
+brew "libtool"
+# C99 library which implements a VT220 or xterm terminal emulator
+brew "libvterm"
 # Lynx-like WWW browser that supports tables, menus, etc.
 brew "links"
 # Text-based web browser
@@ -64,6 +75,8 @@ brew "neovim"
 brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
+# Development kit for the Java programming language
+brew "openjdk"
 # SSL/TLS VPN implementing OSI layer 2 or 3 secure network extension
 brew "openvpn"
 # Pinentry for GPG on Mac
@@ -74,6 +87,8 @@ brew "pipes-sh"
 brew "pwgen"
 # Python Language Server for the Language Server Protocol
 brew "python-lsp-server"
+# Python interface to Tcl/Tk
+brew "python-tk@3.14"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Cross-shell prompt for astronauts
@@ -88,8 +103,12 @@ brew "tmate"
 brew "tmux"
 # Parser generator tool
 brew "tree-sitter-cli"
+# TUI for Mastodon with vim inspired keys
+brew "tut"
 # Vim-like text editor
 brew "vis"
+# Extensible IRC client
+brew "weechat"
 # Internet file retriever
 brew "wget"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -100,18 +119,7 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Simple hotkey-daemon for macOS.
-brew "asmvik/formulae/skhd", trusted: true
-# A tiling window manager for macOS based on binary space partitioning.
-brew "asmvik/formulae/yabai", trusted: true
-# A retro terminal music player inspired by Winamp 2.x
-brew "bjarneo/cliamp/cliamp", trusted: true
-# A window border system for macOS
-brew "felixkratz/formulae/borders", trusted: true
-# YAMAMOTO Mitsuharu's Mac port of GNU Emacs
-brew "railwaycat/emacsmacport/emacs-mac@29", args: ["with-emacs-big-sur-icon", "with-no-title-bars"], trusted: true
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "nikitabobko/tap/aerospace", trusted: true
+cask "aerospace"
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
 # Enable Windows-like alt-tab
@@ -126,8 +134,6 @@ cask "desktoppr"
 cask "docker-desktop"
 # Matrix collaboration client
 cask "element"
-# Web browser
-cask "firefox"
 cask "font-fira-mono-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
@@ -140,6 +146,8 @@ cask "hammerspoon"
 cask "homerow"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix"
+# Web browser focused on privacy and on minimizing tracking and fingerprinting
+cask "mullvad-browser"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -162,4 +170,6 @@ cask "utm"
 cask "vicinae"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm@nightly"
+# Gecko based web browser
+cask "zen"
 npm "less"
