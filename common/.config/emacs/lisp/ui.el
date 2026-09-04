@@ -14,11 +14,11 @@
 
 (add-hook 'window-setup-hook #'my/use-terminal-background)
 
-(add-to-list 'default-frame-alist '(undecorated . t))
-(setq frame-resize-pixelwise t)
-
 (set-face-attribute 'default nil
                     :font "JetBrainsMono Nerd Font"
                     :height 140)
+
+(global-display-line-numbers-mode 1)
+
 
 (provide 'ui)
