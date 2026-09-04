@@ -19,30 +19,32 @@
   :config
   (load-theme 'batppuccin-mocha t))
 
-(use-package evil
-  :init
-  (setq evil-want-integration t
-        evil-want-keybinding nil
-        evil-want-C-u-scroll t
-        evil-want-C-i-jump nil
-        evil-undo-system 'undo-redo)
-  :config
-  (evil-mode 1))
+;; (use-package evil
+;;   :init
+;;   (setq evil-want-integration t
+;;         evil-want-keybinding nil
+;;         evil-want-C-u-scroll t
+;;         evil-want-C-i-jump nil
+;;         evil-undo-system 'undo-redo)
+;;   :config
+;;   (evil-mode 1))
 
-(use-package evil-collection
-  :after evil
-  :config
-  (evil-collection-init))
+;; (use-package evil-collection
+;;   :after evil
+;;   :config
+;;   (evil-collection-init))
 
-(use-package evil-commentary
-  :after evil
-  :config
-  (evil-commentary-mode))
+;; (use-package evil-commentary
+;;   :after evil
+;;   :config
+;;   (evil-commentary-mode))
 
-(use-package evil-surround
-  :after evil
-  :config
-  (global-evil-surround-mode 1))
+;; (use-package evil-surround
+;;   :after evil
+;;   :config
+;;   (global-evil-surround-mode 1))
+
+(use-package org-tree-slide)
 
 (use-package magit)
 (use-package lsp-mode
@@ -75,22 +77,24 @@
 
 (use-package consult
   :bind (
-         ("C-s" . consult-line)          ;; Dosya içi arama (Helm-occur yerine)
+         ("C-s" . consult-line)
          ("C-x b" . consult-buffer)
-         :map evil-normal-state-map
+         ("C-x f" . find-file)
+         ("C-x r" . consult-ripgrep)
+         ;;:map evil-normal-state-map
 ))
 
 (use-package helm-lsp :commands helm-lsp-workspace-symbol)
 (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
 
-(evil-set-leader 'normal (kbd "SPC"))
+;; (evil-set-leader 'normal (kbd "SPC"))
 
-(evil-define-key 'normal 'global
-  (kbd "<leader>ff") 'find-file
-  (kbd "<leader>fr") 'consult-recent-file
-  (kbd "<leader>bb") 'consult-buffer
-  (kbd "<leader>ps") 'consult-ripgrep
-  (kbd "<leader>SPC") 'execute-extended-command)
+;; (evil-define-key 'normal 'global
+;;   (kbd "<leader>ff") 'find-file
+;;   (kbd "<leader>fr") 'consult-recent-file
+;;   (kbd "<leader>bb") 'consult-buffer
+;;   (kbd "<leader>ps") 'consult-ripgrep
+;;   (kbd "<leader>SPC") 'execute-extended-command)
 
 (use-package which-key
     :config
@@ -110,17 +114,18 @@
         centaur-tabs-set-close-button nil
         centaur-tabs-set-modified-marker t)
   :bind
-  (:map evil-normal-state-map
-        ("g t" . centaur-tabs-forward)
-        ("g T" . centaur-tabs-backward)))
+  ;;(:map evil-normal-state-map
+    ;;    ("g t" . centaur-tabs-forward)
+  ;;      ("g T" . centaur-tabs-backward))
+
+  )
 
 (use-package company
   :after lsp-mode
-;  :hook (lsp-mode . company-mode)
   :init (global-company-mode 1)
   :bind (:map company-active-map
-         ("<tab>" . company-complete-selection))
-        (:map lsp-mode-map
+         ("<tab>" . company-complete-selection)
+         :map lsp-mode-map
          ("<tab>" . company-indent-or-complete-common))
   :custom
   (company-minimum-prefix-length 1)
@@ -146,6 +151,36 @@
 (use-package yasnippet-snippets
   :after yasnippet)
 
+(use-package org-present
+  :ensure t
+  :config
+  (add-hook 'org-present-mode-hook
+            (lambda ()
+              (org-present-big)
+              (org-present-hide-cursor)
+              (org-present-read-only)))
+  (add-hook 'org-present-mode-quit-hook
+            (lambda ()
+              (org-present-small)
+              (org-remove-inline-images)
+              (org-present-show-cursor)
+              (org-present-read-write))))
+
+(use-package visual-fill-column
+  :ensure t
+  :config
+  (add-hook 'org-present-mode-hook
+            (lambda ()
+              (setq visual-fill-column-width 100
+                    visual-fill-column-center-text t)
+              (visual-fill-column-mode 1))))
+
+(use-package doom-modeline
+  :init (doom-modeline-mode 1))
+
 (use-package vterm)
+
+(use-package chess)
+(use-package pacmacs)
 
 (provide 'packages)
